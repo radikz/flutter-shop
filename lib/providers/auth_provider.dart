@@ -31,7 +31,7 @@ class AuthProvider with ChangeNotifier {
 
   Future<String> _auth(String email, String password, String urlSegment) async {
     var url = Uri.parse(
-        'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyAoATLz1NlwzG7vBKg4RGXjw57gyruYZYQ');
+        'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=[YOUR API KEY]');
     try {
       final response = await http.post(
         url,
